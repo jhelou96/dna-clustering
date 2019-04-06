@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.111" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.idp.gui.ClusteringController">
+   <children>
+      <TableView fx:id="table" layoutX="75.0" layoutY="195.0" prefHeight="200.0" prefWidth="521.0">
+         <columns>
+            <TableColumn fx:id="id" prefWidth="29.0" text="#" />
+            <TableColumn fx:id="sequence" prefWidth="528.0" text="DNASequence" />
+         </columns>
+      </TableView>
+      <TextField fx:id="txt" layoutX="96.0" layoutY="146.0" onAction="#insert" prefHeight="25.0" prefWidth="171.0" />
+      <Button fx:id="bt" layoutX="291.0" layoutY="142.0" mnemonicParsing="false" onAction="#insert" text="Add">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Button>
+      <Button fx:id="deleteButton" layoutX="350.0" layoutY="142.0" mnemonicParsing="false" onAction="#delete" text="Remove">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Button>
+      <Button fx:id="deleteAllButton" layoutX="507.0" layoutY="142.0" mnemonicParsing="false" onAction="#deleteAll" prefHeight="32.0" prefWidth="89.0" text="Empty DB">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font></Button>
+      <Label layoutX="59.0" layoutY="-6.0" prefHeight="100.0" prefWidth="594.0" text="DNA Clustering Database">
+         <font>
+            <Font name="Forte" size="49.0" />
+         </font></Label>
+      <Label layoutX="93.0" layoutY="115.0" text="&gt; Please enter a new DNA sequence :" />
+      <Button fx:id="runAlgoButton" defaultButton="true" layoutX="507.0" layoutY="418.0" mnemonicParsing="false" onAction="#switchToResult" prefHeight="32.0" prefWidth="89.0" text="Cluster">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Button>
+      <Button fx:id="AutoFill" layoutX="285.0" layoutY="418.0" mnemonicParsing="false" onAction="#Autoinsert" prefHeight="32.0" prefWidth="89.0" text="AutoFill">
+         <font>
+            <Font name="Comic Sans MS" size="15.0" />
+         </font>
+      </Button>
+      <TextField fx:id="txtnumbSequence" layoutX="202.0" layoutY="421.0" onAction="#Autoinsert" prefHeight="25.0" prefWidth="57.0" />
+      <TextField fx:id="max" layoutX="202.0" layoutY="464.0" onAction="#Autoinsert" prefHeight="25.0" prefWidth="57.0" />
+      <Label layoutX="96.0" layoutY="425.0" text="# DNA sequences :" />
+      <Label layoutX="127.0" layoutY="468.0" text="Max. length :" />
+      <Label layoutX="76.0" layoutY="94.0" text="Manual" textFill="#1030e4" />
+      <Label layoutX="80.0" layoutY="401.0" text="Auto" textFill="#1030e4" />
+   </children>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
