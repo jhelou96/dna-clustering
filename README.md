@@ -5,4 +5,4 @@ The software provides the user with an interface that allows him to add and dele
 
 The user can then run the algorithms that clusters the DNA sequences present in the database based on their similarity and outputs a dendrogram containing the different clusters.
 
-A detailed paper concerning this project along with different test cases can be found [here](http://joeyhelou.com/dna/dna.docx)
+A detailed paper concerning this project along with different test cases can be found [here](http://joeyhelou.com/dna-clustering/dna-clustering.pdf)
